@@ -38,6 +38,8 @@ jobs:
 
   # Uploads dependency graph to GitHub to receive Dependabot alerts 
   update_dependence_graph:
+
+ 
     needs: [maven_test]
     runs-on: ubuntu-latest
     permissions:
@@ -49,7 +51,13 @@ jobs:
         with:
           key: cached-build-${{github.sha}}
           path: .
-
+          
+      - name: Restore cached build
+        uses: actions/cache@v3
+        with:
+          key: cached-build-${{github.sha}}
+          path: .
+            
       - name: Generate Maven Dependency Tree
         run: mvn dependency:tree
 

@@ -39,9 +39,11 @@
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/CS1632-Spring2024/supplementary-exercise-4-ci-cd-pipelines-Hanzalar.git</url>
+      <url>https://github.com/CS1632-Spring2024/supplementary-exercise-4-ci-cd-pipelines-Hanzalar.git</url>
     </repository>
   </distributionManagement>
+
+
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>

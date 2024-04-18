@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.wonsunahn</groupId>
-<artifactId>cs1632-cicd-pipelines-har58</artifactId>
+  <artifactId>cs1632-cicd-pipelines-zjs32</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
@@ -31,7 +31,7 @@
 
   <scm>
     <connection>scm:git:git://github.com/wonsunahn/CS1632_CICD_JUnit.git</connection>
-    <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_JUnit</developerConnection>
+    <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_JUnit.git</developerConnection>
     <url>http://github.com/wonsunahn/CS1632_CICD_JUnit/tree/master</url>
   </scm>
 
@@ -39,18 +39,18 @@
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/CS1632-Spring2024/supplementary-exercise-4-ci-cd-pipelines-Hanzalar</url>
+      <url>https://maven.pkg.github.com/CS1632-Spring2024/supplementary-exercise-4-ci-cd-pipelines-ZacharyJSchultz</url>
     </repository>
   </distributionManagement>
-
-
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
     <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
+    <sonar.organization>cs1632-spring2024</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <dependencies>
@@ -58,7 +58,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>5.7.0</version>
+      <version>5.11.0</version>
     </dependency>
 
 
@@ -84,7 +84,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.2.0</version>
         <configuration>
           <mainClass>edu.pitt.cs.RentACatImpl</mainClass>
         </configuration>

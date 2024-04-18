@@ -14,7 +14,6 @@
     + [Adding SonarQube 3rd Party CI Test](#adding-sonarqube-3rd-party-ci-test)
 - [Submission](#submission)
 - [Groupwork Plan](#groupwork-plan)
-
 # CS 1632 - Software Quality Assurance
 Spring Semester 2024 - Supplementary Exercise 4
 
